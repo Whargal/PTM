@@ -1,0 +1,9 @@
+/*
+Theme Name: PTM Theme
+Description: Le thème qui Proxy ta mère !
+Author: PTM
+Template: Divi
+*/
+
+@import url("../Divi/style.css");
+@import url("custom.css");

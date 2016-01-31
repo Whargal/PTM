@@ -119,6 +119,20 @@
 					? $user_logo
 					: $template_directory_uri . '/images/logo.png';
 			?>
+				<div class="logo-container">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
+						<span class="site-title">Proxy ta <i>mère</i></span>
+					</a>
+				</div>
+				<div class="menu-container clearfix">
+					<?php
+					$primaryNav = wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '', 'fallback_cb' => '', 'echo' => false ) );
+					echo $primaryNav;
+					?>
+				</div>
+
+				<?php /*
 				<div class="logo_container">
 					<span class="logo_helper"></span>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -182,6 +196,7 @@
 					</form>
 					<span class="et_close_search_field"></span>
 				</div>
+				*/ ?>
 			</div>
 		</header> <!-- #main-header -->
 

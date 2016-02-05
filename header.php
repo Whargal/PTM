@@ -122,7 +122,7 @@
 				<div class="logo-container">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
-						<span class="site-title">Proxy ta <i>mère</i></span>
+						<span class="site-title"><i>Proxy</i> ta mère</span>
 					</a>
 				</div>
 				<div class="menu-container clearfix">

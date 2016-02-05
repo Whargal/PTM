@@ -2,6 +2,7 @@
 #main-header {
 	padding: 30px 0;
 	background-color: @dark;
+	.transition(all 0.3s ease-in-out);
 	.logo-container {
 		float: left;
 		#logo {
@@ -42,6 +43,9 @@
 	}
 	.menu-container {
 		float: right;
+		#menu-navbar {
+			margin-right: -20px;
+		}
 		li {
 			font-size: 36px;
 			line-height: 50px;
@@ -78,6 +82,24 @@
 					color: @blue;
 				}
 			}
+		}
+	}
+	&.et-fixed-header {
+		padding: 15px 0;
+		.logo-container {
+			#logo {
+				height: 40px;
+			}
+			.site-title {
+				font-size: 32px;
+			}
+		}
+		.menu-container {
+			li {
+				line-height: 40px;
+				font-size: 32px;
+			}
+
 		}
 	}
 }

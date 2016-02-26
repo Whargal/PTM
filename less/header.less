@@ -1,5 +1,9 @@
 
 #main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	padding: 30px 0;
 	background-color: @dark;
 	.transition(all 0.3s ease-in-out);
@@ -24,7 +28,6 @@
 			&:before {
 				content: "";
 				position: absolute;
-				z-index: -1;
 				top: 0;
 				bottom: 0;
 				left: 0;
@@ -44,23 +47,22 @@
 	.menu-container {
 		float: right;
 		#menu-navbar {
-			margin-right: -20px;
+			line-height: 50px;
+			margin: 0 -20px 0 0;
 		}
 		li {
 			font-size: 36px;
-			line-height: 50px;
 			display: inline-block;
+			vertical-align: middle;
 			a {
 				color: @light;
 				padding: 0 20px;
 				line-height: 1em;
 				font-family: Bebas;
 				position: relative;
-				vertical-align: middle;
 				&:before {
 					content: "";
 					position: absolute;
-					z-index: -1;
 					top: 0;
 					bottom: 0;
 					left: 0;
@@ -84,7 +86,7 @@
 			}
 		}
 	}
-	&.et-fixed-header {
+	&.fixed {
 		padding: 15px 0;
 		.logo-container {
 			#logo {
